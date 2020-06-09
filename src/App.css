@@ -8,7 +8,7 @@
 }
 
 .container {
-  background: linear-gradient(100deg, rgb(40, 118, 182) 50%, #4b8dc4 0);
+  /* background: linear-gradient(100deg, rgb(40, 118, 182) 50%, #4b8dc4 0); */
   width: 100%;
   height: 100vh;
   display: flex;
@@ -31,7 +31,15 @@
   color: #ccc;
   font-weight: 300;
   text-align: center;
-  margin: 50px 20px 60px 20px;
+  margin: 20px 20px 10px 20px;
+  font-family: 'Josefin Slab', serif;
+}
+
+.time h1 {
+  color: #ccc;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 20px 60px 20px;
   font-family: 'Josefin Slab', serif;
 }
 
@@ -96,7 +104,7 @@
 }
 
 .btn {
-  margin: 10px;
+  margin: 20px;
 }
 
 .add-task-btn {

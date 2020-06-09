@@ -5,6 +5,7 @@ import TaskListContextProvider from './context/TaskListContext';
 import TaskForm from './components/TaskForm';
 // import Header from './components/Header';
 import Greeting from './components/Greeting';
+import Time from './components/Time';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <div className='main'>
             {/* <Header /> */}
             <Greeting />
+            <Time />
             <TaskForm />
             <TaskList />
           </div>
