@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react';
+import { v4 as uuid } from 'uuid';
 
 export const TaskListContext = createContext();
 
@@ -9,8 +10,12 @@ const TaskListContextProvider = (props) => {
     { id: 3, title: 'Lead SCRUM on Thursday' },
   ]);
 
+  const addTask = (title) => {
+    setTasks([...tasks, { title, id: uuid() }]);
+  };
+
   return (
-    <TaskListContext.Provider value={{ tasks }}>
+    <TaskListContext.Provider value={{ tasks, addTask }}>
       {props.children}
     </TaskListContext.Provider>
   );
