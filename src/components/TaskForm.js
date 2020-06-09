@@ -13,9 +13,11 @@ const TaskForm = () => {
     console.log(title);
   };
 
+  // Things that happened after clicking Add Task
   const handleSubmit = (e) => {
     e.preventDefault();
     addTask(title);
+    setTitle('');
   };
 
   return (

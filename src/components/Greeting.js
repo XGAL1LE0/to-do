@@ -5,13 +5,14 @@ const Greeting = () => {
   let time = date.getHours();
 
   let greeting;
+  const name = 'Axel';
 
   if (time < 12) {
-    greeting = 'Good Morning';
+    greeting = `Good Morning, ${name}`;
   } else if (time < 18) {
-    greeting = 'Good Afternoon';
+    greeting = `Good Afternoon, ${name}`;
   } else {
-    greeting = 'Good Evening';
+    greeting = `Good Evening, ${name}`;
   }
 
   return (
